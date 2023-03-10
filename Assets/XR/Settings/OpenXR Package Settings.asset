@@ -122,6 +122,7 @@ MonoBehaviour:
   - {fileID: -3102234820631189242}
   - {fileID: -9077804432168537952}
   - {fileID: 6274874583960110880}
+  - {fileID: -2409222139720637370}
   - {fileID: 3534178478629802962}
   - {fileID: 3412078932984761891}
   - {fileID: -4848219855488437154}
@@ -257,7 +258,7 @@ MonoBehaviour:
   company: HTC
   priority: 0
   required: 0
-  m_XrInstance: 201760383696897
+  m_XrInstance: 179684251795457
   m_XrSession: 0
   m_systemid: 0
 --- !u!114 &-4944743793384702352
@@ -339,6 +340,7 @@ MonoBehaviour:
   - {fileID: 5967022923386588188}
   - {fileID: -8381435639611024446}
   - {fileID: -8690207246545357227}
+  - {fileID: 2206026034505854805}
   - {fileID: -710496003531612840}
   - {fileID: -8620608815216885334}
   - {fileID: 7102622312544321796}
@@ -374,6 +376,26 @@ MonoBehaviour:
   featureIdInternal: com.htc.openxr.feature.input.htcvivecosmos
   openxrExtensionStrings: XR_HTC_vive_cosmos_controller_interaction XR_EXT_palm_pose
   company: HTC
+  priority: 0
+  required: 0
+--- !u!114 &-2409222139720637370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2fe570546b5b2046873e03d7b882369, type: 3}
+  m_Name: MeshingTeapotFeature Standalone
+  m_EditorClassIdentifier: 
+  m_enabled: 1
+  nameUi: 'Sample: Meshing Teapot'
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.example.meshing
+  openxrExtensionStrings: 
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &-2114270672685796217
@@ -607,6 +629,26 @@ MonoBehaviour:
   featureIdInternal: com.unity.openxr.feature.vivefocus3
   openxrExtensionStrings: 
   company: HTC
+  priority: 0
+  required: 0
+--- !u!114 &2206026034505854805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2fe570546b5b2046873e03d7b882369, type: 3}
+  m_Name: MeshingTeapotFeature Android
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: 'Sample: Meshing Teapot'
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.example.meshing
+  openxrExtensionStrings: 
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &3412078932984761891
