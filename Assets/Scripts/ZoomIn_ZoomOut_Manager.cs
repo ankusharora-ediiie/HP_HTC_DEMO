@@ -34,8 +34,11 @@ public class ZoomIn_ZoomOut_Manager : MonoBehaviour
         //{
         //    _server_MainGameObject = GameObject.Find("HPE_Server_Parent_X-Ray_Mode");
         //}
-        _leftHandPosition_Value.text = _leftHand_VR.GetComponent<RectTransform>().position.ToString();
-        _rightHandPosition_Value.text = _rightHand_VR.GetComponent<RectTransform>().position.ToString();
+        if (_leftHandPosition_Value != null && _rightHandPosition_Value != null)
+        {
+            _leftHandPosition_Value.text = _leftHand_VR.transform.position.ToString();
+            _rightHandPosition_Value.text = _rightHand_VR.transform.position.ToString();
+        }
     }
 
     // Update is called once per frame
@@ -43,10 +46,14 @@ public class ZoomIn_ZoomOut_Manager : MonoBehaviour
     {
         if(_server_MainGameObject.activeInHierarchy)
         {
-            _leftHandPosition_Value.text = _leftHand_VR.GetComponent<RectTransform>().position.ToString();
-            _rightHandPosition_Value.text = _rightHand_VR.GetComponent<RectTransform>().position.ToString();
+            if (_leftHandPosition_Value != null && _rightHandPosition_Value != null && _distanceBetween_Value != null)
+            {
+                _leftHandPosition_Value.text = _leftHand_VR.transform.position.ToString();
+                _rightHandPosition_Value.text = _rightHand_VR.transform.position.ToString();
+                _distanceBetween_Value.text = Vector3.Distance(_leftHand_VR.transform.position, _rightHand_VR.transform.position).ToString();
+            }
 
-            _distanceBetween_Value.text = Vector3.Distance(_leftHand_VR.transform.position, _rightHand_VR.transform.position).ToString();
+
             _variableDistance_Controller = Vector3.Distance(_leftHand_VR.transform.position, _rightHand_VR.transform.position);
 
             if (_leftHandTriggerPressed && _rightHandTriggerPressed)
@@ -71,10 +78,13 @@ public class ZoomIn_ZoomOut_Manager : MonoBehaviour
         
         if(_server_MainGameObject_XRay.activeInHierarchy)
         {
-            _leftHandPosition_Value.text = _leftHand_VR.GetComponent<RectTransform>().position.ToString();
-            _rightHandPosition_Value.text = _rightHand_VR.GetComponent<RectTransform>().position.ToString();
+            if (_leftHandPosition_Value != null && _rightHandPosition_Value != null && _distanceBetween_Value != null)
+            {
+                _leftHandPosition_Value.text = _leftHand_VR.transform.position.ToString();
+                _rightHandPosition_Value.text = _rightHand_VR.transform.position.ToString();
+                _distanceBetween_Value.text = Vector3.Distance(_leftHand_VR.transform.position, _rightHand_VR.transform.position).ToString();
+            }
 
-            _distanceBetween_Value.text = Vector3.Distance(_leftHand_VR.transform.position, _rightHand_VR.transform.position).ToString();
             _variableDistance_Controller = Vector3.Distance(_leftHand_VR.transform.position, _rightHand_VR.transform.position);
 
             if (_leftHandTriggerPressed && _rightHandTriggerPressed)
