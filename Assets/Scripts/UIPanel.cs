@@ -15,15 +15,16 @@ public class UIPanel : MonoBehaviour
     public void Awake()
     {
         nextBtn.onClick.AddListener(NextbuttonClick);
+        ShowText(0);
     }
 
     public void NextbuttonClick()
     {
         count++;
-        ShowText();
+        ShowText(count);
     }
 
-    private void ShowText()
+    private void ShowText(int count)
     {
         if(count < 0)
             return;
