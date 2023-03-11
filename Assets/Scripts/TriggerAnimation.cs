@@ -5,6 +5,8 @@ using UnityEngine;
 public class TriggerAnimation : MonoBehaviour
 {
     public Animator animator;
+    public List<GameObject> highlightedObjects = new List<GameObject>();
+
 
     public void PlayAnimationByTrigger(string animationName)
     {
@@ -14,5 +16,13 @@ public class TriggerAnimation : MonoBehaviour
     public void PlayAnimationByName(string animation)
     {
         animator.Play(animation);
+    }
+
+    public void EnableColliders()
+    {
+        for (int i = 0; i < highlightedObjects.Count; i++)
+        {
+            highlightedObjects[i].GetComponent<BoxCollider>().enabled = true;
+        }
     }
 }

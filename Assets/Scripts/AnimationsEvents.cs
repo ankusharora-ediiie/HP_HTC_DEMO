@@ -16,4 +16,9 @@ public class AnimationsEvents : MonoBehaviour
     {
         Aruba_Server.SetActive(true);
     }
+
+    void ShowText(int id)
+    {
+        UIPanel.instance.ShowText(id);
+    }
 }

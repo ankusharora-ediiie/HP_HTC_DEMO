@@ -12,8 +12,19 @@ public class UIPanel : MonoBehaviour
     public int count;
     public Button nextBtn;
 
+    public static UIPanel instance;
+
     public void Awake()
     {
+        if (instance != null)
+        {
+            Destroy(instance);
+        }
+        else
+        {
+            instance = this;
+        }
+
         nextBtn.onClick.AddListener(NextbuttonClick);
         ShowText(0);
     }
@@ -24,7 +35,7 @@ public class UIPanel : MonoBehaviour
         ShowText(count);
     }
 
-    private void ShowText(int count)
+    public void ShowText(int count)
     {
         if(count < 0)
             return;
