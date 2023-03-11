@@ -11,14 +11,8 @@ public class InputManager : MonoBehaviour
 {
     [SerializeField]
     private XRNode xRNode = XRNode.LeftHand;
-
-    [SerializeField]
-    private GameObject _scriptGameObject;
-
-    [SerializeField]
-    private GameObject _mainServer_GameObject;
-    //public TextMeshProUGUI triggerText;
-    //public TextMeshProUGUI triggerPrimer2D;
+    public TextMeshProUGUI triggerText;
+    public TextMeshProUGUI triggerPrimer2D;
 
     private List<InputDevice> devices = new List<InputDevice>();
 
@@ -59,31 +53,13 @@ public class InputManager : MonoBehaviour
         {
             triggerIsPressed = true;
             Debug.Log($"TriggerButton activated {triggerButtonValue} on {xRNode}");
-            if (xRNode == XRNode.LeftHand)
-            {
-                _scriptGameObject.GetComponent<ZoomIn_ZoomOut_Manager>()._leftHandTriggerPressed = true;
-                //triggerText.text = $"TriggerButton activated {triggerButtonValue} on {xRNode} on {_scriptGameObject.GetComponent<ZoomIn_ZoomOut_Manager>()._leftHandTriggerPressed}";
-            }
-            if (xRNode == XRNode.RightHand)
-            {
-                _scriptGameObject.GetComponent<ZoomIn_ZoomOut_Manager>()._rightHandTriggerPressed = true;
-                //triggerPrimer2D.text = $"TriggerButton activated {triggerButtonValue} on {xRNode} on {_scriptGameObject.GetComponent<ZoomIn_ZoomOut_Manager>()._rightHandTriggerPressed}";
-            }
+            triggerText.text = $"TriggerButton activated {triggerButtonValue} on {xRNode}";
         }
         else if (!triggerButtonValue && triggerIsPressed)
         {
             triggerIsPressed = false;
             Debug.Log($"TriggerButton deactivated {triggerButtonValue} on {xRNode}");
-            if (xRNode == XRNode.LeftHand)
-            {
-                _scriptGameObject.GetComponent<ZoomIn_ZoomOut_Manager>()._leftHandTriggerPressed = false;
-                //triggerText.text = $"TriggerButton activated {triggerButtonValue} on {xRNode} on {_scriptGameObject.GetComponent<ZoomIn_ZoomOut_Manager>()._leftHandTriggerPressed}";
-            }
-            if (xRNode == XRNode.RightHand)
-            {
-                _scriptGameObject.GetComponent<ZoomIn_ZoomOut_Manager>()._rightHandTriggerPressed = false;
-                //triggerPrimer2D.text = $"TriggerButton activated {triggerButtonValue} on {xRNode} on {_scriptGameObject.GetComponent<ZoomIn_ZoomOut_Manager>()._rightHandTriggerPressed}";
-            }
+            triggerText.text = $"TriggerButton deactivated {triggerButtonValue} on {xRNode}";
         }
 
         // capturing primary button press and release
@@ -119,35 +95,14 @@ public class InputManager : MonoBehaviour
             prevPrimary2DAxisValue = primary2DAxisValue;
             primary2DAxisIsChosen = true;
             Debug.Log($"Primary2DAxis value activated {primary2DAxisValue} on {xRNode}");
-            //triggerPrimer2D.text = $"Primary2DAxis value activated {primary2DAxisValue} on {xRNode}";
-            if (xRNode == XRNode.LeftHand && _mainServer_GameObject.activeInHierarchy)
-            {
-                _mainServer_GameObject.transform.Rotate(new Vector3(0f, primary2DAxisValue.x * Time.deltaTime * -270f, 0f));
-                //triggerText.text = $"Primary2DAxis value activated {primary2DAxisValue} on {xRNode}";
-
-            }
-            if (xRNode == XRNode.RightHand && _mainServer_GameObject.activeInHierarchy)
-            {
-                _mainServer_GameObject.transform.Rotate(new Vector3(0f, primary2DAxisValue.x * Time.deltaTime * -270f, 0f));
-                //triggerPrimer2D.text = $"Primary2DAxis value activated {primary2DAxisValue} on {xRNode}";
-
-            }
+            triggerPrimer2D.text = $"Primary2DAxis value activated {primary2DAxisValue} on {xRNode}";
         }
         else if (primary2DAxisValue == Vector2.zero && primary2DAxisIsChosen)
         {
             prevPrimary2DAxisValue = primary2DAxisValue;
             primary2DAxisIsChosen = false;
             Debug.Log($"Primary2DAxis deactivated {primary2DAxisValue} on {xRNode}");
-            //triggerPrimer2D.text = $"Primary2DAxis deactivated {primary2DAxisValue} on {xRNode}";
-            if (xRNode == XRNode.LeftHand && _mainServer_GameObject.activeInHierarchy)
-            {
-                //triggerText.text = $"Primary2DAxis value activated {primary2DAxisValue} on {xRNode}";
-            }
-            if (xRNode == XRNode.RightHand && _mainServer_GameObject.activeInHierarchy)
-            {
-                //triggerPrimer2D.text = $"Primary2DAxis value activated {primary2DAxisValue} on {xRNode}";
-            }
-
+            triggerPrimer2D.text = $"Primary2DAxis deactivated {primary2DAxisValue} on {xRNode}";
         }
 
         // capturing grip value
