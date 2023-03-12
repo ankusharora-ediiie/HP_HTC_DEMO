@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.009848946, g: 0.23120661, b: 0.4206859, a: 1}
+  m_IndirectSpecularColor: {r: 0.009848946, g: 0.23120639, b: 0.42068562, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -27674,7 +27674,7 @@ GameObject:
   m_Component:
   - component: {fileID: 806239403}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: GameObject_Amrit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27688,7 +27688,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 806239402}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.2175965, y: 6.632347, z: -5.161793}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
