@@ -49,8 +49,5 @@ public class AnimationsEvents : MonoBehaviour
 
     }
 
-    void ShowText(int id)
-    {
-
-    }
+   
 }
