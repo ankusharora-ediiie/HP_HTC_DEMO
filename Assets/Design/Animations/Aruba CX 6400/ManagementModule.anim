@@ -872,7 +872,7 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 2.8666666
-    functionName: MainServer_Part_5_Text_Sound_1_Method
+    functionName: MainServer_Part_6_Text_Sound_1_Method
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

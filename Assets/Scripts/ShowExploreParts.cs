@@ -22,7 +22,6 @@ public class ShowExploreParts : MonoBehaviour
     {
         if(!showPart)
         {
-            showPart = true;
             _soundManager._audioSource_CompleteFlow.clip = _soundManager._sounds_CompleteFlow[16];
             _soundManager._audioSource_CompleteFlow.pitch = 1f;
             _soundManager._audioSource_CompleteFlow.Stop();
@@ -32,6 +31,10 @@ public class ShowExploreParts : MonoBehaviour
     void Show_Reverse_Method()
     {
         showPart = false;
+    }
+    void Show_AntiReverse_Method()
+    {
+        showPart = true;
     }
 
     void Show_Backward_Method()
