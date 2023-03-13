@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.009848946, g: 0.23120639, b: 0.42068562, a: 1}
+  m_IndirectSpecularColor: {r: 0.009848946, g: 0.23120661, b: 0.4206859, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2865,6 +2865,7 @@ GameObject:
   - component: {fileID: 257976666}
   - component: {fileID: 257976665}
   - component: {fileID: 257976669}
+  - component: {fileID: 257976670}
   m_Layer: 0
   m_Name: LeftHand Controller
   m_TagString: Untagged
@@ -3282,6 +3283,21 @@ MonoBehaviour:
   m_MoveObjectOut: 15
   m_DirectionalAnchorRotation: 1
   m_PoseProvider: {fileID: 0}
+--- !u!114 &257976670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257976663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e4123827d976c4a9ed11f7961b7cd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xRNode: 4
+  _scriptGameObject: {fileID: 1594063895}
+  _mainServer_GameObject: {fileID: 1965482960}
 --- !u!1 &274790041
 GameObject:
   m_ObjectHideFlags: 0
@@ -45753,7 +45769,7 @@ Transform:
   - {fileID: 856752174906154064}
   - {fileID: 232019145}
   - {fileID: 851569163}
-  - {fileID: 1707090082}
+  - {fileID: 1965482961}
   - {fileID: 603280876187470940}
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -49776,7 +49792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff0dc6d0d52be2245a8f3fa65800a4c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Aruba_Server: {fileID: 1707090081}
+  Aruba_Server: {fileID: 1965482960}
   Next_Button: {fileID: 514084782}
   highlightedObjects: []
   partsToDisable: []
@@ -50049,6 +50065,7 @@ GameObject:
   - component: {fileID: 1377922923}
   - component: {fileID: 1377922922}
   - component: {fileID: 1377922926}
+  - component: {fileID: 1377922927}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: Untagged
@@ -50466,6 +50483,21 @@ MonoBehaviour:
   m_MoveObjectOut: 15
   m_DirectionalAnchorRotation: 1
   m_PoseProvider: {fileID: 0}
+--- !u!114 &1377922927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377922920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e4123827d976c4a9ed11f7961b7cd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xRNode: 5
+  _scriptGameObject: {fileID: 1594063895}
+  _mainServer_GameObject: {fileID: 1965482960}
 --- !u!1 &1387258379
 GameObject:
   m_ObjectHideFlags: 0
@@ -53657,6 +53689,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1594063896}
   - component: {fileID: 1594063897}
+  - component: {fileID: 1594063898}
   m_Layer: 0
   m_Name: Script
   m_TagString: Untagged
@@ -53692,6 +53725,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1707090083}
+--- !u!114 &1594063898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594063895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e07dc5e353c4e5142b1a0c11ccad37d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _leftHandPosition_Value: {fileID: 0}
+  _rightHandPosition_Value: {fileID: 0}
+  _distanceBetween_Value: {fileID: 0}
+  _leftHand_VR: {fileID: 257976663}
+  _rightHand_VR: {fileID: 1377922920}
+  _leftHandTriggerPressed: 0
+  _rightHandTriggerPressed: 0
+  _server_MainGameObject: {fileID: 1965482960}
+  _server_MainGameObject_XRay: {fileID: 1965482960}
+  _initialScale_Server: {x: 0, y: 0, z: 0}
+  _initialDistance_Controller: 0
+  _variableDistance_Controller: 0
 --- !u!1 &1608270061
 GameObject:
   m_ObjectHideFlags: 0
@@ -54942,7 +54999,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1707090082
 Transform:
   m_ObjectHideFlags: 0
@@ -54950,7 +55007,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1707090081}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 1.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -54962,8 +55019,8 @@ Transform:
   - {fileID: 762177134}
   - {fileID: 1072437892}
   - {fileID: 1387258380}
-  m_Father: {fileID: 990373773}
-  m_RootOrder: 3
+  m_Father: {fileID: 1965482961}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &1707090083
 Animator:
@@ -56936,6 +56993,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947022636}
   m_Mesh: {fileID: -5914600584525256522, guid: 6745a25b47f3a6b4ca0f6b01a5b22366, type: 3}
+--- !u!1 &1965482960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1965482961}
+  m_Layer: 0
+  m_Name: ArubaServer_Parent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1965482961
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965482960}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1707090082}
+  m_Father: {fileID: 990373773}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1967932583
 GameObject:
   m_ObjectHideFlags: 0
@@ -81737,7 +81826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4462420822513498555, guid: c667dc690410d6b4e86e7577f3398d3e, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4462420822513498555, guid: c667dc690410d6b4e86e7577f3398d3e, type: 3}
       propertyPath: m_AnchorMax.x
