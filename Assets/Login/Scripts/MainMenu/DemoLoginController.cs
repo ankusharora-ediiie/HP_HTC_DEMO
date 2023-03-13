@@ -57,8 +57,8 @@ public class DemoLoginController : MonoBehaviour
         filledColor.a = .1f;
         ColorUtility.TryParseHtmlString("#FB8080", out errorColor);
         errorColor.a = .1f;
-        inputField.text = "4uCHkE"; // M6OwRS
-        passcode = "4uCHkE";
+        inputField.text = "GgGOKC"; // M6OwRS
+        passcode = "GgGOKC";
         inputField.interactable = true;
         if (isCameraPermissionRequired)
         {
@@ -255,7 +255,7 @@ public class DemoLoginController : MonoBehaviour
                     print(PlayerPrefs.GetInt("onlineDate"));
                 }
                 errorMessage.text = message + "!";
-                SceneManager.LoadScene("01_ControllerSample_Final");
+                SceneManager.LoadScene("ArubaCX_D");
             }
             else
             {

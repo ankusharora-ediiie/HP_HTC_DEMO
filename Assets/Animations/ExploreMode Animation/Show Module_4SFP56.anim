@@ -321,7 +321,7 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 0.016666668
-    functionName: Show_Backward_Method
+    functionName: Show_Forward_Method
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
