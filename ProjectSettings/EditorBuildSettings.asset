@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/00_LoginScene.unity
-    guid: bf8317ae161bcb44aa7cb7d2c37b9357
-  - enabled: 1
     path: Assets/Scenes/ArubaCX_D.unity
     guid: f98f267d335e4834eb09c4280414096d
   m_configObjects:

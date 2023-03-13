@@ -3135,8 +3135,8 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   m_InvalidColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 0, b: 0, a: 1}
-    key1: {r: 1, g: 0, b: 0, a: 1}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -3164,8 +3164,8 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   m_BlockedColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-    key1: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -26994,6 +26994,18 @@ PrefabInstance:
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 9036618717035325744, guid: 29d36a8e64aee3145b84a06cc1cbaa34, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036618717035325744, guid: 29d36a8e64aee3145b84a06cc1cbaa34, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036618717035325744, guid: 29d36a8e64aee3145b84a06cc1cbaa34, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9036618717035325744, guid: 29d36a8e64aee3145b84a06cc1cbaa34, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -27003,7 +27015,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9036618717035325744, guid: 29d36a8e64aee3145b84a06cc1cbaa34, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -207
+      value: -197
       objectReference: {fileID: 0}
     - target: {fileID: 9036618717035325744, guid: 29d36a8e64aee3145b84a06cc1cbaa34, type: 3}
       propertyPath: m_LocalRotation.w
@@ -27023,11 +27035,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9036618717035325744, guid: 29d36a8e64aee3145b84a06cc1cbaa34, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 185
+      value: 204
       objectReference: {fileID: 0}
     - target: {fileID: 9036618717035325744, guid: 29d36a8e64aee3145b84a06cc1cbaa34, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -51.3
+      value: -35
       objectReference: {fileID: 0}
     - target: {fileID: 9036618717035325744, guid: 29d36a8e64aee3145b84a06cc1cbaa34, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -27047,7 +27059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9036618717035325745, guid: 29d36a8e64aee3145b84a06cc1cbaa34, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9036618717035325747, guid: 29d36a8e64aee3145b84a06cc1cbaa34, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -48475,6 +48487,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 16586189}
     m_Modifications:
+    - target: {fileID: 4577285053175353550, guid: d97b647defcf1784fbbd406fa2b79739, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1100
+      objectReference: {fileID: 0}
     - target: {fileID: 4577285054187584198, guid: d97b647defcf1784fbbd406fa2b79739, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -52629,8 +52645,8 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   m_InvalidColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 0, b: 0, a: 1}
-    key1: {r: 1, g: 0, b: 0, a: 1}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -52658,8 +52674,8 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   m_BlockedColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-    key1: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
