@@ -10,6 +10,8 @@ public class TriggerAnimation : MonoBehaviour
     public void PlayAnimationByTrigger(string animationName)
     {
         animator.SetTrigger(animationName);
+        _soundManager._audioSource_CompleteFlow.Stop();
+        _soundManager._textSpeechAudioSource.Stop();
         _soundManager._nextButtonAudioSource.clip = _soundManager._nextButtonAudioClip;
         _soundManager._nextButtonAudioSource.pitch = 1f;
         _soundManager._nextButtonAudioSource.Stop();
