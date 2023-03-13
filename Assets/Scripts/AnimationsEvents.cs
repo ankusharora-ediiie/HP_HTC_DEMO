@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AnimationsEvents : MonoBehaviour
 {
@@ -69,6 +70,22 @@ public class AnimationsEvents : MonoBehaviour
     void Aruba_Sound_1_Method()
     {
         _soundManager._audioSource_CompleteFlow.clip = _soundManager._sounds_CompleteFlow[2];
+        _soundManager._audioSource_CompleteFlow.pitch = 1f;
+        _soundManager._audioSource_CompleteFlow.Stop();
+        _soundManager._audioSource_CompleteFlow.Play();
+    }
+
+    void InGram_Sound_2_Method()
+    {
+        _soundManager._audioSource_CompleteFlow.clip = _soundManager._sounds_CompleteFlow[18];
+        _soundManager._audioSource_CompleteFlow.pitch = 1f;
+        _soundManager._audioSource_CompleteFlow.Stop();
+        _soundManager._audioSource_CompleteFlow.Play();
+    }
+
+    void Aruba_Sound_2_Method()
+    {
+        _soundManager._audioSource_CompleteFlow.clip = _soundManager._sounds_CompleteFlow[19];
         _soundManager._audioSource_CompleteFlow.pitch = 1f;
         _soundManager._audioSource_CompleteFlow.Stop();
         _soundManager._audioSource_CompleteFlow.Play();
@@ -228,5 +245,13 @@ public class AnimationsEvents : MonoBehaviour
         _soundManager._textSpeechAudioSource.pitch = 1f;
         _soundManager._textSpeechAudioSource.Stop();
         _soundManager._textSpeechAudioSource.Play();
+    }
+
+    void ActivateArubaLogo_Method()
+    {
+        if(GameObject.Find("Aruba_Logo_Top"))
+        {
+            GameObject.Find("Aruba_Logo_Top").GetComponent<Image>().enabled = true;
+        }
     }
 }
