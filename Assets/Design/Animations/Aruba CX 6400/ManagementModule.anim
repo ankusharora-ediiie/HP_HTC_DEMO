@@ -857,8 +857,22 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 2.95
+  - time: 0
+    functionName: MainServer_ManagementTool_Sound_1_Method
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 2.8333333
     functionName: ShowUIAfterAnimationComplete
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 2.8666666
+    functionName: MainServer_Part_5_Text_Sound_1_Method
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
