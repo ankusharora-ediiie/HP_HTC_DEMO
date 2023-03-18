@@ -14023,7 +14023,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 339237640}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d5d18ef9fa7bda4d8e086d8fb92058e, type: 3}
   m_Name: 
@@ -14158,7 +14158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 480, y: 92.7}
+  m_AnchoredPosition: {x: 498, y: 92.7}
   m_SizeDelta: {x: 90, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &341737864
@@ -14168,7 +14168,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341737862}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d5d18ef9fa7bda4d8e086d8fb92058e, type: 3}
   m_Name: 
@@ -29327,7 +29327,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743300600}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d5d18ef9fa7bda4d8e086d8fb92058e, type: 3}
   m_Name: 
@@ -41745,7 +41745,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 898530059}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d5d18ef9fa7bda4d8e086d8fb92058e, type: 3}
   m_Name: 
@@ -57006,6 +57006,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5eaf063ee31cf3b4ca37d91b1c9f939f, type: 3}
   - {fileID: 8300000, guid: 2b42ac09d53964296936b6ebfe1dba05, type: 3}
   - {fileID: 8300000, guid: 090ffd307d7d642dc95f2624e54c7201, type: 3}
+  - {fileID: 8300000, guid: d51f6aaeae730429c8c1cb3b5ea01f4c, type: 3}
+  - {fileID: 8300000, guid: 919525d5f8f0a41b8a046210ffdcb0d4, type: 3}
+  - {fileID: 8300000, guid: 448dc1f996e6048369d4b4e1b221b1ed, type: 3}
+  - {fileID: 8300000, guid: 841cf5787ea2e4ceca475366679e4920, type: 3}
+  - {fileID: 8300000, guid: 3f33f4061fa2c41d49a9796078969749, type: 3}
   _audioSource_CompleteFlow: {fileID: 288589234}
   _nextButtonAudioClip: {fileID: 8300000, guid: 85cae4474d4a3c84b9ee7796ab7b0edf, type: 3}
   _nextButtonAudioSource: {fileID: 1148364328}
@@ -59462,7 +59467,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1813790274}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d5d18ef9fa7bda4d8e086d8fb92058e, type: 3}
   m_Name: 
